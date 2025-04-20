@@ -26,9 +26,35 @@ A simple web application that converts Markdown files to PDF or DOCX format whil
 
 ## Usage
 
+### Web Interface
 1. Click the "Choose File" button and select your Markdown file
 2. Select the desired output format (PDF or DOCX)
 3. Click "Convert" to download the converted file
+
+### Command Line Interface
+The converter can also be used from the command line:
+
+```bash
+# Convert to PDF (default)
+python cli.py input.md output.pdf
+
+# Convert to DOCX
+python cli.py input.md output.docx --format docx
+```
+
+Options:
+- `input_file`: Path to the input Markdown file
+- `output_file`: Path to save the output file
+- `--format`: Output format (pdf or docx, default: pdf)
+
+Example:
+```bash
+# Convert README.md to PDF
+python cli.py README.md README.pdf
+
+# Convert documentation.md to DOCX
+python cli.py documentation.md documentation.docx --format docx
+```
 
 ## Testing
 
