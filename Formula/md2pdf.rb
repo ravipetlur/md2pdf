@@ -3,8 +3,8 @@ class Md2pdf < Formula
 
   desc "Convert Markdown files to PDF or DOCX"
   homepage "https://github.com/ravipetlur/md2pdf"
-  url "https://github.com/ravipetlur/md2pdf/archive/v0.1.0.tar.gz"
-  sha256 "647229ca02fea1f14ccc7495b24c487099788eac82239fbbe2cb5df3bb794c6a"  # Replace with actual SHA256 after creating release
+  url "https://github.com/ravipetlur/md2pdf/archive/v0.4.0.tar.gz"
+  sha256 "b92222583fdbdd7c50e58b15cc0b356c80089e0bc1d79b80aa59684c0dc49f8b"  # Replace with actual SHA256 after creating release
   license "MIT"
 
   depends_on "python@3.9"
