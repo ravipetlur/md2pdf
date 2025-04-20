@@ -2,8 +2,18 @@
 
 A simple web application that converts Markdown files to PDF or DOCX format while preserving formatting.
 
-## Setup
+## Installation
 
+### Using Homebrew (macOS)
+```bash
+# Add the tap
+brew tap yourusername/md2pdf
+
+# Install the package
+brew install md2pdf
+```
+
+### Manual Installation
 1. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
@@ -36,10 +46,10 @@ The converter can also be used from the command line:
 
 ```bash
 # Convert to PDF (default)
-python cli.py input.md output.pdf
+md2pdf input.md output.pdf
 
 # Convert to DOCX
-python cli.py input.md output.docx --format docx
+md2pdf input.md output.docx --format docx
 ```
 
 Options:
@@ -50,10 +60,10 @@ Options:
 Example:
 ```bash
 # Convert README.md to PDF
-python cli.py README.md README.pdf
+md2pdf README.md README.pdf
 
 # Convert documentation.md to DOCX
-python cli.py documentation.md documentation.docx --format docx
+md2pdf documentation.md documentation.docx --format docx
 ```
 
 ## Testing
