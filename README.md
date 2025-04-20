@@ -30,6 +30,50 @@ A simple web application that converts Markdown files to PDF or DOCX format whil
 2. Select the desired output format (PDF or DOCX)
 3. Click "Convert" to download the converted file
 
+## Testing
+
+The project includes comprehensive test cases. To run the tests:
+
+1. Make sure all dependencies are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run all tests:
+   ```bash
+   pytest
+   ```
+
+3. For more detailed output:
+   ```bash
+   pytest -v
+   ```
+
+4. To see test coverage:
+   ```bash
+   pytest --cov=app tests/
+   ```
+
+The test suite includes:
+- Basic functionality tests
+- File upload tests
+- PDF conversion tests
+- DOCX conversion tests
+- Special character handling
+- Error case handling
+
 ## Note
 
 Make sure you have all the dependencies installed properly. WeasyPrint might require additional system dependencies depending on your operating system.
+
+### System Dependencies
+
+On macOS:
+```bash
+brew install cairo pango gdk-pixbuf libffi
+```
+
+On Ubuntu/Debian:
+```bash
+sudo apt-get install python3-cffi python3-brotli libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
+```
